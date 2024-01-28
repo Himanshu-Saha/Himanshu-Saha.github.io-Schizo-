@@ -26,12 +26,14 @@
   }
   
   .gallery-block.grid-gallery .item{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   
   .image-size{
     height: 2154px;
   }
+
+
 
   @media (min-width: 576px) {
   
@@ -104,6 +106,20 @@ header{
     left: 2vmax;
 }
 
+.about{
+    text-align: center;
+}
+
+.cart{
+    position: relative;
+}
+
+.cartAmount{
+    position: absolute;
+    top: 1px;
+    right: 8px;
+    color: red;
+}
 @media (max-width: 745px){
     header{
         position: fixed;
@@ -166,3 +182,33 @@ header{
     }
 }
 
+
+.item{
+    /* border: 2px solid black; */
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+}
+.buttons{
+    /* box-shadow: 0; */
+    display: flex;
+    gap: 5px;
+}
+.bi-plus-lg{
+    color: green;
+}
+.bi-minus-lg{
+    color: red;
+}
+.price-quantity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

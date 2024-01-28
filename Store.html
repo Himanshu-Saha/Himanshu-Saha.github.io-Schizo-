@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>Schizo</title>
     <meta http-equiv="X-UA-Compatible" contents="IE=edge" />
@@ -6,6 +7,8 @@
     <link rel="stylesheet" href="store.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+    <!-- <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css”/> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -24,11 +27,13 @@
                     <li><a href="#">ARTWORKS</a></li>
                     <li><a href="#">TATTOOS</a></li>
                     <li><a href="#">CONTACTS</a></li>
-                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
                     <li><a href="#">STORE</a></li>
                 </ul>
-                
-            <a href=""><img src="icon_image/icons8-instagram-38.png" alt="" class="nav-icon" style="height: 2em;"></a>
+                <div class="cart">
+                    <a href="cart.html"><img src="icon_image/icons8-cart-40.png" alt="" class="nav-icon" style="height: 2em;"></a>
+                    <div id="cartAmount" class="cartAmount">0</div>
+                </div>
                 
             </nav>
     </header>
@@ -43,47 +48,8 @@
                 </h2>
                 <hr class="hr">
             </div>
-            <div  id="row-1" class="row">
-                <div id="grid-pics" class="col-md-6 col-lg-4 item">
-                    <!-- <a class="lightbox" href="Store_image/IMG_20230114_160809.jpg"> -->
-                        <img class="image-size img-fluid image scale-on-hover" src="Store_image/IMG_20230114_160809.jpg">
-                    <!-- </a> -->
-                </div>
-                <div id="grid-pics" class="col-md-6 col-lg-4 item">
-                    <!-- <a class="lightbox" href="Store_image/IMG_20230114_162409.jpg"> -->
-                        <img class="image-size img-fluid image scale-on-hover" src="Store_image/IMG_20230114_162409.jpg">
-                    <!-- </a> -->
-                </div>
-                <div  id="grid-pics"class="col-md-6 col-lg-4 item">
-                    <!-- <a class="lightbox" href="Store_image/IMG_20230114_163246.jpg"> -->
-                        <img class="image-size img-fluid image scale-on-hover" src="Store_image/IMG_20230114_163246.jpg">
-                    <!-- </a> -->
-                </div>
-                <div  id="grid-pics" class="col-md-6 col-lg-4 item">
-                    <!-- <a class="lightbox" href="Store_image/IMG_20230305_214314.jpg"> -->
-                        <img class="image-size img-fluid image scale-on-hover" src="Store_image/IMG_20230305_214314.jpg">
-                    <!-- </a> -->
-                </div>
-                <div id="grid-pics" class="col-md-6 col-lg-4 item">
-                    <!-- <a class="lightbox" href="Store_image/IMG_20230822_203811.jpg"> -->
-                        <img class="image-size img-fluid image scale-on-hover" src="Store_image/IMG_20230822_203811.jpg">
-                    <!-- </a> -->
-                </div>
-                <div  id="grid-pics"class="col-md-6 col-lg-4 item">
-                    <!-- <a class="lightbox" href="Store_image/IMG_20230508_122439.jpg"> -->
-                        <img class="image-size img-fluid image scale-on-hover" src="Store_image/IMG_20230508_122439.jpg">
-                    <!-- </a> -->
-                </div>
-                <div id="grid-pics" class="col-md-6 col-lg-4 item">
-                    <!-- <a class="lightbox" href="Store_image/IMG_20230926_223521.jpg"> -->
-                        <img class="image-size img-fluid image scale-on-hover" src="Store_image/IMG_20230926_223521.jpg">
-                    <!-- </a> -->
-                </div>
-                <div id="grid-pics" class="col-md-6 col-lg-4 item">
-                    <!-- <a class="lightbox" href="Store_image/SEE YOU HELL22 (1).png"> -->
-                        <img class="image-size img-fluid image scale-on-hover" src="Store_image/SEE YOU HELL22 (1).png">
-                    <!-- </a> -->
-                </div>
+            <div  id="row-1" id="shop" class="row">
+                
                 <!-- <div  id="grid-pics"class="col-md-6 col-lg-4 item">
                     <a class="lightbox" href="im">
                         <img class="img-fluid image scale-on-hover" src="im">
@@ -101,3 +67,6 @@
     </footer>
     <!--Footer-->
 </body>
+<script src="data.js"></script>
+<script src="store.js"></script>
+</html>
